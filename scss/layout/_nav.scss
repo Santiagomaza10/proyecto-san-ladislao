@@ -1,0 +1,26 @@
+nav {
+    background: green;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    
+    
+    li {
+        text-align: center;
+        background: green;
+        text-decoration: none;
+        color: white;
+    }
+
+    .dropdown-menu.show {
+        background-color: red;
+    }
+
+    .dropdown-item {
+        text-align: center;
+        background-color: red;
+        padding: 0;
+    }
+}

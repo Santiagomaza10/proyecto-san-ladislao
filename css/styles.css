@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: green;
+}
+footer div {
+  border: 2px solid black;
+}
+footer div ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+footer div ul li a {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__ul__title {
+  text-align: center;
+}
+
+header {
+  background: green;
+}
+
+nav {
+  background: green;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+nav li {
+  text-align: center;
+  background: green;
+  text-decoration: none;
+  color: white;
+}
+nav .dropdown-menu.show {
+  background-color: red;
+}
+nav .dropdown-item {
+  text-align: center;
+  background-color: red;
+  padding: 0;
+}
+
+.hero {
+  width: auto;
+  height: auto;
+  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.hero .hero__btncontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 15rem;
+  height: 10rem;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.hero .hero__btncontainer p {
+  color: white;
+}
+.hero .hero__btncontainer a {
+  border: 2px solid black;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 35%;
+}
+
+.bienvenida article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.niveles {
+  display: flex;
+  flex-direction: column;
+}
+.niveles .niveles__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+.niveles .niveles__card .niveles__img {
+  width: 17rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.novedades .novedades__title {
+  text-align: center;
+}
+.novedades .novedades__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.novedades .novedades__cards .novedades__cards__img {
+  width: 12rem;
+  height: 8rem;
+}
+.novedades .novedades__cards .novedades__cards__text {
+  text-align: center;
+}
+
+/* .hero{
+    background-image: url(../assets/img/index/heroimg.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .herobox{
+        background: rgba(37, 30, 30, 0.685);
+        width: 50%;
+    }
+} */
+
+/*# sourceMappingURL=styles.css.map */
