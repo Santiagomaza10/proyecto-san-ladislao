@@ -6,7 +6,7 @@
 
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background: green;
@@ -28,6 +28,10 @@ footer div ul li a {
 
 .footer__ul__title {
   text-align: center;
+}
+
+.footer__container1 {
+  display: block;
 }
 
 header {
@@ -60,7 +64,6 @@ nav .dropdown-item {
 .hero {
   width: auto;
   height: auto;
-  border: solid 2px black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,6 +133,19 @@ nav .dropdown-item {
 }
 .novedades .novedades__cards .novedades__cards__text {
   text-align: center;
+}
+
+.redes h2 {
+  text-align: center;
+}
+.redes .redes__icontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.redes .redes__icontainer i {
+  font-size: 2rem;
+  padding: 1rem 0;
 }
 
 /* .hero{

@@ -1,6 +1,6 @@
 footer {
     display:  flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     background: green;
@@ -25,4 +25,8 @@ footer {
 
 .footer__ul__title {
     text-align: center;
+}
+
+.footer__container1 {
+    display: block
 }

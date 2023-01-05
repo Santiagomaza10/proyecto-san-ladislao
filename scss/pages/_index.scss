@@ -1,7 +1,6 @@
 .hero {
     width: auto;
     height: auto;
-    border: solid 2px black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,6 +90,25 @@
         }
     }
 
+}
+
+.redes {
+
+    h2 {
+        text-align: center;
+    }
+
+    .redes__icontainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        i{
+            font-size: 2rem;
+            padding: 1rem 0;
+        }
+    }
+    
 }
 
 
