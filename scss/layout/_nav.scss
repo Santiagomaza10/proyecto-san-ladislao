@@ -1,26 +1,13 @@
-/* nav {
-    background: green;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-    
-    
-    li {
-        text-align: center;
-        background: green;
-        text-decoration: none;
-        color: white;
-    }
+nav {
 
-    .dropdown-menu.show {
-        background-color: red;
+    a {
+        display: flex;
+        gap: 2rem;
     }
-
-    .dropdown-item {
-        text-align: center;
-        background-color: red;
-        padding: 0;
+    i {
+        font-size: 2rem;
     }
-} */
+    span {
+        display: none;
+    }
+}
