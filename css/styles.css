@@ -34,31 +34,67 @@ footer div ul li a {
   display: block;
 }
 
-header {
-  background: green;
-}
+/* nav {
+    background: green;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
 
-nav {
-  background: green;
-  height: 10vh;
+
+    li {
+        text-align: center;
+        background: green;
+        text-decoration: none;
+        color: white;
+    }
+
+    .dropdown-menu.show {
+        background-color: red;
+    }
+
+    .dropdown-item {
+        text-align: center;
+        background-color: red;
+        padding: 0;
+    }
+} */
+.historia__banner {
+  width: 100%;
+  height: 15rem;
+  background-image: url("../../assets/banner.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  z-index: 1;
 }
-nav li {
-  text-align: center;
-  background: green;
-  text-decoration: none;
+.historia__banner .historia__banner__text {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.37);
   color: white;
 }
-nav .dropdown-menu.show {
-  background-color: red;
-}
-nav .dropdown-item {
+
+.historia__text {
   text-align: center;
-  background-color: red;
-  padding: 0;
+}
+
+.historia__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.historia__img img {
+  width: 30rem;
+}
+
+.proyecto__text {
+  text-align: center;
+}
+
+.mision {
+  text-align: center;
 }
 
 .hero {
