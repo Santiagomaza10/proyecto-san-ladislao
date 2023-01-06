@@ -70,7 +70,7 @@ nav span {
   height: 15rem;
   background-size: cover;
   background-position: center;
-  background-image: url(../assets/historia/historiafotocolegio.jpg);
+  background-image: url(../assets/historiafotocolegio.jpg);
 }
 
 .proyecto__text {
@@ -84,6 +84,59 @@ nav span {
 .proyecto__carousel {
   width: 100%;
   height: 20rem;
+}
+
+.uniforme .uniforme__img {
+  width: 100%;
+  height: 20rem;
+  background-image: url(../assets/uniforme/uniforme.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 2rem 0;
+}
+
+.uniforme__text h1 {
+  text-align: center;
+}
+.uniforme__text p {
+  text-align: start;
+}
+
+.inicialobjetivos__banner {
+  width: 100%;
+  height: 15rem;
+  background-image: url("../assets/inicial/objetivos/inicial_objetivos_banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inicialobjetivos__banner .inicialobjetivos__banner__text {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.37);
+  color: white;
+}
+
+.inicialobjetivos {
+  padding: 2rem 0;
+}
+.inicialobjetivos h2 {
+  text-align: center;
+}
+.inicialobjetivos .inicialobjetivos__img {
+  width: 100%;
+  height: 20rem;
+  background-image: url("../assets/inicial/objetivos/inicial_objetivos1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.inicialobjetivos .inicialobjetivos__img2 {
+  width: 100%;
+  height: 20rem;
+  background-image: url("../assets/inicial/objetivos/inicial_objetivos2.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero {

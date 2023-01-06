@@ -1,0 +1,41 @@
+.inicialobjetivos__banner {
+    width: 100%;
+    height: 15rem;
+    background-image: url("../assets/inicial/objetivos/inicial_objetivos_banner.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .inicialobjetivos__banner__text {
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.37);
+        color: white;
+    }
+}
+
+.inicialobjetivos {
+    
+    padding: 2rem 0;
+
+    h2 {
+        text-align: center;
+    }
+
+    .inicialobjetivos__img {
+        width: 100%;
+    height: 20rem;
+    background-image: url("../assets/inicial/objetivos/inicial_objetivos1.jpg");
+    background-size: cover;
+    background-position: center;
+    }
+
+    .inicialobjetivos__img2 {
+    width: 100%;
+    height: 20rem;
+    background-image: url("../assets/inicial/objetivos/inicial_objetivos2.jpg");
+    background-size: cover;
+    background-position: center;
+    }
+}
