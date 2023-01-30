@@ -1,6 +1,7 @@
 @import "./base/reset";
 @import "./base/typo";
 
+@import "./components/banner";
 @import "./components/button";
 @import "./components/cards";
 
@@ -8,6 +9,8 @@
 @import "./layout/header";
 @import "./layout/nav";
 
+@import "./pages/inicial__proyectos";
+@import "./pages/materiaespecial";
 @import "./pages/institucional__historia";
 @import "./pages/institucional__uniforme";
 @import "./pages/inicial__objetivos";

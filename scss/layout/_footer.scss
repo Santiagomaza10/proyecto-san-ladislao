@@ -1,12 +1,13 @@
 footer {
     display:  flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: green;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
 
     div{
-        border: 2px solid black;
         
         ul {
             list-style: none;
@@ -27,6 +28,16 @@ footer {
     text-align: center;
 }
 
-.footer__container1 {
-    display: block
+.footer__container1, .footer__container2  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+    h3 {
+        text-decoration: underline;
+        margin: 0.5rem;
+    }
 }
+

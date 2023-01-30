@@ -4,15 +4,54 @@
   box-sizing: border-box;
 }
 
+h2 {
+  margin: 1.8rem 0;
+  font-size: 2rem;
+}
+
+.textdesc {
+  margin: 1.5rem;
+}
+
+.title {
+  margin: 1.5rem 0;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+.banner {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner h1 {
+  position: absolute;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.37);
+  color: white;
+}
+.banner img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  object-position: center;
+}
+
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: green;
-}
-footer div {
-  border: 2px solid black;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
 }
 footer div ul {
   list-style: none;
@@ -30,8 +69,15 @@ footer div ul li a {
   text-align: center;
 }
 
-.footer__container1 {
-  display: block;
+.footer__container1, .footer__container2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer__container1 h3, .footer__container2 h3 {
+  text-decoration: underline;
+  margin: 0.5rem;
 }
 
 nav a {
@@ -45,32 +91,22 @@ nav span {
   display: none;
 }
 
-.historia__banner {
+.inicialproyectos_huerta .inicialproyectos_huerta__img {
   width: 100%;
-  height: 15rem;
-  background-image: url("../assets/banner.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.historia__banner .historia__banner__text {
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.37);
-  color: white;
+.inicialproyectos_huerta .inicialproyectos_huerta__img img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.historia__text {
-  text-align: center;
-}
-
-.historia__img {
+.inicialproyectos_muestra .inicialproyectos_muestra__img {
   width: 100%;
-  height: 15rem;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../assets/historia/historiafotocolegio.jpg");
+}
+.inicialproyectos_muestra .inicialproyectos_muestra__img img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .proyecto__text {
@@ -83,7 +119,10 @@ nav span {
 
 .proyecto__carousel {
   width: 100%;
-  height: 20rem;
+}
+.proyecto__carousel img {
+  object-fit: cover;
+  object-position: center;
 }
 
 .uniforme .uniforme__img {
@@ -98,45 +137,27 @@ nav span {
 .uniforme__text h1 {
   text-align: center;
 }
-.uniforme__text p {
-  text-align: start;
-}
 
-.inicialobjetivos__banner {
-  width: 100%;
-  height: 15rem;
-  background-image: url("../assets/inicial/objetivos/inicial_objetivos_banner.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.inicialobjetivos__banner .inicialobjetivos__banner__text {
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.37);
-  color: white;
-}
-
-.inicialobjetivos {
-  padding: 2rem 0;
-}
 .inicialobjetivos h2 {
   text-align: center;
 }
 .inicialobjetivos .inicialobjetivos__img {
   width: 100%;
-  height: 20rem;
-  background-image: url("../assets/inicial/objetivos/inicial_objetivos1.jpg");
-  background-size: cover;
-  background-position: center;
+}
+.inicialobjetivos .inicialobjetivos__img img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin: 1rem 0;
 }
 .inicialobjetivos .inicialobjetivos__img2 {
   width: 100%;
-  height: 20rem;
-  background-image: url("../assets/inicial/objetivos/inicial_objetivos2.jpg");
-  background-size: cover;
-  background-position: center;
+}
+.inicialobjetivos .inicialobjetivos__img2 img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin: 1rem 0;
 }
 
 .hero {
@@ -172,10 +193,19 @@ nav span {
   align-items: center;
   text-align: center;
 }
+.bienvenida article h1 {
+  margin: 2rem 0;
+  font-size: 2.2rem;
+}
+.bienvenida article p {
+  text-align: left;
+}
 
 .niveles {
   display: flex;
   flex-direction: column;
+  margin: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.089);
 }
 .niveles .niveles__card {
   display: flex;
@@ -183,15 +213,23 @@ nav span {
   align-items: center;
   justify-items: center;
   text-align: center;
+  width: 100%;
+}
+.niveles .niveles__card h2 {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+.niveles .niveles__card p {
+  margin: 1rem 0;
 }
 .niveles .niveles__card .niveles__img {
-  width: 17rem;
-  height: 10rem;
-  object-fit: cover;
+  width: 100%;
 }
 
 .novedades .novedades__title {
   text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
 }
 .novedades .novedades__cards {
   display: flex;
@@ -200,13 +238,16 @@ nav span {
   justify-content: center;
 }
 .novedades .novedades__cards .novedades__cards__img {
-  width: 12rem;
-  height: 8rem;
+  width: 100%;
 }
 .novedades .novedades__cards .novedades__cards__text {
   text-align: center;
+  margin: 1rem 0;
 }
 
+.redes {
+  background-color: rgba(0, 0, 0, 0.089);
+}
 .redes h2 {
   text-align: center;
 }
@@ -216,7 +257,7 @@ nav span {
   align-items: center;
 }
 .redes .redes__icontainer i {
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 1rem 0;
 }
 
