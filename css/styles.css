@@ -109,6 +109,15 @@ nav span {
   object-position: center;
 }
 
+.inicialingles__img {
+  width: 100%;
+}
+.inicialingles__img img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .proyecto__text {
   text-align: center;
 }
@@ -121,6 +130,16 @@ nav span {
   width: 100%;
 }
 .proyecto__carousel img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.historia__img {
+  width: 100%;
+}
+.historia__img img {
+  width: 100%;
   object-fit: cover;
   object-position: center;
 }
