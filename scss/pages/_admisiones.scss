@@ -1,0 +1,22 @@
+.admisiones_cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+    }
+
+    a {
+        width: auto; 
+        margin: 1rem 0;
+        justify-content: center;
+    }
+
+}

@@ -91,6 +91,30 @@ nav span {
   display: none;
 }
 
+.contacto_li li {
+  list-style: none;
+}
+
+.admisiones_cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.admisiones_cards img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.admisiones_cards a {
+  width: auto;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
 .inicialproyectos_huerta .inicialproyectos_huerta__img {
   width: 100%;
 }
@@ -124,15 +148,6 @@ nav span {
 
 .mision {
   text-align: center;
-}
-
-.proyecto__carousel {
-  width: 100%;
-}
-.proyecto__carousel img {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 .historia__img {
@@ -202,7 +217,6 @@ nav span {
 .hero .hero__btncontainer a {
   text-decoration: none;
   color: white;
-  border: 2px black solid;
   padding: 0.5rem;
 }
 
