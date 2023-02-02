@@ -11,6 +11,7 @@ h2 {
 
 .textdesc {
   margin: 1.5rem;
+  text-align: start;
 }
 
 .title {
@@ -65,19 +66,30 @@ footer div ul li a {
   color: white;
 }
 
-.footer__ul__title {
-  text-align: center;
-}
-
 .footer__container1, .footer__container2 {
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
+  text-align: start;
 }
-.footer__container1 h3, .footer__container2 h3 {
+.footer__container1 .footer__ul, .footer__container2 .footer__ul {
+  width: 40%;
+}
+.footer__container1 .footer__ul .footer__ul__title, .footer__container2 .footer__ul .footer__ul__title {
   text-decoration: underline;
-  margin: 0.5rem;
+  font-size: 1.1rem;
+}
+.footer__container1 .footer__ul li, .footer__container2 .footer__ul li {
+  font-size: 0.9rem;
+  text-align: start;
+}
+.footer__container1 .footer__ul .footer__redes, .footer__container2 .footer__ul .footer__redes {
+  display: flex;
+  justify-content: start;
+}
+.footer__container1 .footer__ul .footer__redes i, .footer__container2 .footer__ul .footer__redes i {
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
 }
 
 nav a {
@@ -220,25 +232,31 @@ nav span {
   padding: 0.5rem;
 }
 
+.bienvenida {
+  background-color: rgba(0, 0, 0, 0.089);
+}
 .bienvenida article {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.bienvenida article h1 {
-  margin: 2rem 0;
-  font-size: 2.2rem;
+.bienvenida article h1 span {
+  background-image: linear-gradient(45deg, red, rgb(158, 152, 152), green);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
-.bienvenida article p {
-  text-align: left;
+.bienvenida article .bienvenida__video {
+  width: 100vw;
+  margin: 1rem 0;
 }
 
 .niveles {
   display: flex;
   flex-direction: column;
   margin: 2rem 0;
-  background-color: rgba(0, 0, 0, 0.089);
 }
 .niveles .niveles__card {
   display: flex;
@@ -257,8 +275,12 @@ nav span {
 }
 .niveles .niveles__card .niveles__img {
   width: 100%;
+  border-radius: 25%;
 }
 
+.novedades {
+  background-color: rgba(0, 0, 0, 0.089);
+}
 .novedades .novedades__title {
   text-align: center;
   font-size: 2rem;
@@ -278,9 +300,6 @@ nav span {
   margin: 1rem 0;
 }
 
-.redes {
-  background-color: rgba(0, 0, 0, 0.089);
-}
 .redes h2 {
   text-align: center;
 }
@@ -293,20 +312,5 @@ nav span {
   font-size: 1.8rem;
   padding: 1rem 0;
 }
-
-/* .hero{
-    background-image: url(../assets/img/index/heroimg.jpg);
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-
-    .herobox{
-        background: rgba(37, 30, 30, 0.685);
-        width: 50%;
-    }
-} */
 
 /*# sourceMappingURL=styles.css.map */
