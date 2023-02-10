@@ -1,225 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Colegio San Ladislao</title>
   </head>
 
-<body>
-<header>
+  <body>
+    <header>
+      <!---------------------- MENU -->
 
-        <!---------------------- MENU -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <i class="bi bi-house-door-fill"></i>
+            <span>Colegio San Ladislao </span>
+            <i class="bi bi-bank"></i>
+          </a>
 
-    <nav class="navbar navbar-expand-lg">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
 
-          <div class="container-fluid">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Institucional
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/institucional__historia.html"
+                      >Historia</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/institucional__uniforme.html"
+                      >Uniforme</a
+                    >
+                  </li>
+                </ul>
+              </li>
 
-            
-            <a class="navbar-brand" href="#">
-              <i class="bi bi-house-door-fill"></i>
-              <span>Colegio San Ladislao </span>
-              <i class="bi bi-bank"></i>
-            </a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Comunidad
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">A confirmar</a></li>
+                  <li><a class="dropdown-item" href="#">A confirmar</a></li>
+                </ul>
+              </li>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nivel Inicial
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/inicial_objetivos.html"
+                      >Objetivos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/inicial_proyectos.html"
+                      >Proyectos</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/inicial_ingles.html"
+                      >Ingles</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/inicial_artistica.html"
+                      >Educación Artística</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/inicial_edfisica.html"
+                      >Educación Física</a
+                    >
+                  </li>
+                </ul>
+              </li>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nivel Primario
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Objetivos</a></li>
+                  <li><a class="dropdown-item" href="#">Proyectos</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Ingles</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Educación Artística</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Educación Física</a>
+                  </li>
+                </ul>
+              </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nivel Secundario
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Objetivos</a></li>
+                  <li><a class="dropdown-item" href="#">Proyectos</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Ingles</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Educación Artística</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Educación Física</a>
+                  </li>
+                </ul>
+              </li>
 
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Institucional
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./pages/institucional__historia.html">Historia</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="./pages/institucional__uniforme.html">Uniforme</a></li>
-                  </ul>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/admisiones.html"
+                  >Admisiones</a
+                >
+              </li>
 
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Comunidad
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">A confirmar</a></li>
-                    <li><a class="dropdown-item" href="#">A confirmar</a></li>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Nivel Inicial
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./pages/inicial_objetivos.html">Objetivos</a></li>
-                    <li><a class="dropdown-item" href="./pages/inicial_proyectos.html">Proyectos</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="./pages/inicial_ingles.html">Ingles</a></li>
-                    <li><a class="dropdown-item" href="./pages/inicial_artistica.html">Educación Artística</a></li>
-                    <li><a class="dropdown-item" href="./pages/inicial_edfisica.html">Educación Física</a></li>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Nivel Primario
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Objetivos</a></li>
-                    <li><a class="dropdown-item" href="#">Proyectos</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Ingles</a></li>
-                    <li><a class="dropdown-item" href="#">Educación Artística</a></li>
-                    <li><a class="dropdown-item" href="#">Educación Física</a></li>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Nivel Secundario
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Objetivos</a></li>
-                    <li><a class="dropdown-item" href="#">Proyectos</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Ingles</a></li>
-                    <li><a class="dropdown-item" href="#">Educación Artística</a></li>
-                    <li><a class="dropdown-item" href="#">Educación Física</a></li>
-                  </ul>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/admisiones.html">Admisiones</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                </li>
-
-              </ul>
-            </div>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
           </div>
-    </nav>
-    
+        </div>
+      </nav>
+    </header>
 
-  </header>
-
-<main>
-
+    <main>
       <!------------------- HERO SECTION -->
 
-<section class="hero container-fluid">
+      <section class="hero container-fluid">
+        <div class="hero__btncontainer">
+          <p class="hero__text">"Lorem ipsum dolor, sit "</p>
 
-  <div class="hero__btncontainer">
-
-    <p class="hero__text">"Lorem ipsum dolor, sit "</p>
-
-    <a href="./pages/admisiones.html" class="btn btn-primary">Admisiones</a>
-
-  </div>
-
-</section>
+          <a href="./pages/admisiones.html" class="btn btn-primary"
+            >Admisiones</a>
+        </div>
+      </section>
 
       <!------------------- BIENVENIDA  -->
 
-<section class="bienvenida container">
+      <section class="bienvenida sectioncard container">
         <article>
-          <h1 class="title">Bienvenidos a <br><span>Colegio San Ladislao</span></h1>
-          <p class="textdesc"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus sapiente reprehenderit dolores obcaecati maxime voluptatem provident beatae sint saepe suscipit? Ea corrupti accusantium fuga atque quo similique ut sit itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur error hic assumenda quasi. Esse repellat maiores optio dolore quae maxime</p>
-          
-          <button class="btn btn-primary">Conocenos</button> <!-- link a institucional -->
+
+          <div class="bienvenida_text ">
+            <h1 class="title">
+              Bienvenidos a <br /><span>Colegio San Ladislao</span>
+            </h1>
+            <p class="textdesc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloribus sapiente reprehenderit dolores obcaecati maxime
+              voluptatem pruasi. Esse repellat maiores optio dolore quae
+              maxime Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, ex nobis maxime architecto iusto ea repellat quaerat, dolorem eaque, delectus cupiditate quam. Libero, amet? Cupiditate natus quo dolorum optio consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis recusandae sunt ipsa amet provident, ullam doloribus animi? Deserunt modi error quasi porro facere veniam, repellendus earum architecto illum, sit eligendi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur at ipsa accusantium quas nulla, ducimus expedita placeat voluptates iure eum quis dignissimos quibusdam, nihil quasi porro sed! Quam, nemo perspiciatis.
+            </p>
+
+            <button class="btn btn-primary">Conocenos</button>
+
+            <!-- link a institucional -->
+          </div>
 
           <div class="bienvenida__video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Dv5V3ujlBco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/Dv5V3ujlBco"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
 
         </article>
-
-</section>
+      </section>
 
       <!------------------- NIVELES CARDS  -->
 
-<section class="container-fluid niveles">
+      <section class="container niveles">
         <div class="niveles__card">
           <h2 class="niveles__title">Nivel Inicial</h2>
-          <img class="niveles__img" src="./assets/kinder.jpg" alt="">
-          <p class="niveles__text">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+          <img class="niveles__img" src="./assets/kinder.jpg" alt="" />
+          <p class="textdesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing
+          </p>
+          <a href="./pages/admisiones.html" class="btn btn-primary"
+            >Admisiones</a>
         </div>
 
-        <div class="niveles__card">
+        <div class="niveles__card mid">
           <h2 class="niveles__title">Primaria</h2>
-          <img class="niveles__img" src="./assets/primaria.jpg" alt="">
-          <p class="niveles__text">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+          <img class="niveles__img" src="./assets/primaria.jpg" alt="" />
+          <p class="textdesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing
+          </p>
+          <a href="./pages/admisiones.html" class="btn btn-primary"
+            >Admisiones</a>
         </div>
 
         <div class="niveles__card">
           <h2 class="niveles__title">Secundaria</h2>
-          <img class="niveles__img" src="./assets/secundaria.jpg" alt="">
-          <p class="niveles__text">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+          <img class="niveles__img" src="./assets/secundaria.jpg" alt="" />
+          <p class="textdesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing
+          </p>
+          <a href="./pages/admisiones.html" class="btn btn-primary"
+            >Admisiones</a>
         </div>
-
-</section>
+      </section>
 
       <!------------------------ NOVEDADES CARDS  -->
 
-<section class="container novedades">
+      <section class="container-fluid novedades">
+        <h2 class="title">Novedades</h2>
 
-        <h2 class="novedades__title">Novedades</h2>
+        <div class="cards_container">
 
-        <div class="novedades__cards">
+          <div class="novedades__cards">
+            <img
+              class="novedades__cards__img"
+              src="./assets/novedades.jpg"
+              alt=""
+            />
 
-          <img class="novedades__cards__img" src="./assets/novedades.jpg" alt="">
+            <p class="textdesc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+              ex, nisi fugiat quaerat optio neque quisquam,
+            </p>
+          </div>
 
-          <p class="novedades__cards__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ex, nisi fugiat quaerat optio neque quisquam,</p>
+          <div class="novedades__cards">
+            <img
+              class="novedades__cards__img"
+              src="./assets/novedades.jpg"
+              alt=""
+            />
+
+            <p class="textdesc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+              ex, nisi fugiat quaerat optio neque quisquam,
+            </p>
+          </div>
+
+          <div class="novedades__cards">
+            <img
+              class="novedades__cards__img"
+              src="./assets/novedades.jpg"
+              alt=""
+            />
+
+            <p class="textdesc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+              ex, nisi fugiat quaerat optio neque quisquam,
+            </p>
+          </div>
+
+          <div class="novedades__cards">
+            <img
+              class="novedades__cards__img"
+              src="./assets/novedades.jpg"
+              alt=""
+            />
+
+            <p class="textdesc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+              ex, nisi fugiat quaerat optio neque quisquam,
+            </p>
+          </div>
+
+          <div class="novedades__cards">
+            <img
+              class="novedades__cards__img"
+              src="./assets/novedades.jpg"
+              alt=""
+            />
+
+            <p class="textdesc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+              ex, nisi fugiat quaerat optio neque quisquam,
+            </p>
+          </div>
+
+          <div class="novedades__cards">
+            <img
+              class="novedades__cards__img"
+              src="./assets/novedades.jpg"
+              alt=""
+            />
+
+            <p class="textdesc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+              ex, nisi fugiat quaerat optio neque quisquam,
+            </p>
+          </div>
 
         </div>
 
-
-        <div class="novedades__cards">
-
-          <img class="novedades__cards__img" src="./assets/novedades.jpg" alt="">
-
-          <p class="novedades__cards__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ex, nisi fugiat quaerat optio neque quisquam,</p>
-
-        </div>
-
-
-        <div class="novedades__cards">
-
-          <img class="novedades__cards__img" src="./assets/novedades.jpg" alt="">
-
-          <p class="novedades__cards__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ex, nisi fugiat quaerat optio neque quisquam,</p>
-
-        </div>
-
-
-        <div class="novedades__cards">
-
-          <img class="novedades__cards__img" src="./assets/novedades.jpg" alt="">
-
-          <p class="novedades__cards__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ex, nisi fugiat quaerat optio neque quisquam,</p>
-
-        </div>
-
-</section>
+      </section>
 
       <!------------------------ REDES  -->
 
-<section class="redes">
-
+      <section class="redes">
         <h2 class="redes__title">Nuestras redes</h2>
 
         <div class="redes__icontainer">
@@ -229,72 +389,84 @@
           <i class="bi bi-whatsapp"></i>
           <i class="bi bi-envelope"></i>
         </div>
+      </section>
+    </main>
 
-</section>
-
-</main>
-    
     <!-------------------- FOOTER  -->
 
-<footer class="container-fluid footer">
-
+    <footer class="container-fluid footer">
       <div class="footer__container1">
         <div class="footer__ul">
           <h3 class="footer__ul__title">San Ladislao</h3>
           <ul>
-            <li><a href="./pages/institucional__historia.html">Nuestro colegio</a></li>
-            <li><a href="./pages/institucional__historia.html">Proyecto educativo</a></li>
-            <li><a href="./pages/institucional__historia.html">Autoridades</a></li>
+            <li>
+              <a href="./pages/institucional__historia.html">Nuestro colegio</a>
+            </li>
+            <li>
+              <a href="./pages/institucional__historia.html"
+                >Proyecto educativo</a
+              >
+            </li>
+            <li>
+              <a href="./pages/institucional__historia.html">Autoridades</a>
+            </li>
             <li><a href="./pages/institucional__uniforme.html">Uniforme</a></li>
           </ul>
-      </div>
+        </div>
 
-      
-    <div class="footer__ul">
-        <h3 class="footer__ul__title">Niveles</h3>
-        <ul>
-        <li><a href="./pages/inicial_objetivos.html">Nivel Inicial</a></li>
-        <li><a href="">Primaria</a></li>
-        <li><a href="">Secundaria</a></li>
-      </ul>
-    </div>
-  </div>
-    
-    <div class="footer__container2">
-      <div class="footer__ul">
-        <h3 class="footer__ul__title">Mas información</h3>
-        <ul>
-          <li><a href="./pages/admisiones.html">Admisiones</a></li>
-          <li><a href="./pages/contacto.html">Trabaja con nosotros</a></li>
-          <li><a href="">Politicas de privacidad</a></li>
-        </ul>
-      </div>
-
-
-      <div class="footer__ul">
-        <h3 class="footer__ul__title">Contacto</h3>
-        <ul>
-          <li><a href=""><i class="bi bi-envelope"></i> sanla@colegio.com</a></li>
-          <li><a href=""><i class="bi bi-telephone-fill"></i> 1111111111</a></li>
-          <li><a href="https://www.google.com/maps/place/Colegio+San+Ladislao/@-34.4999318,-58.4992476,15z/data=!4m5!3m4!1s0x0:0x3b4d052b50751053!8m2!3d-34.4999311!4d-58.4992481" target="_blank"><i class="bi bi-geo-alt-fill"></i> Mariano moren 12341</a></li>
-        </ul>
-
-        <div class="footer__redes">
-          <i class="bi bi-instagram"></i>
-          <i class="bi bi-youtube"></i>
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-whatsapp"></i>
-          <i class="bi bi-envelope"></i>
+        <div class="footer__ul">
+          <h3 class="footer__ul__title">Niveles</h3>
+          <ul>
+            <li><a href="./pages/inicial_objetivos.html">Nivel Inicial</a></li>
+            <li><a href="">Primaria</a></li>
+            <li><a href="">Secundaria</a></li>
+          </ul>
         </div>
       </div>
 
-    </div>
+      <div class="footer__container2">
+        <div class="footer__ul">
+          <h3 class="footer__ul__title">Mas información</h3>
+          <ul>
+            <li><a href="./pages/admisiones.html">Admisiones</a></li>
+            <li><a href="./pages/contacto.html">Trabaja con nosotros</a></li>
+            <li><a href="">Politicas de privacidad</a></li>
+          </ul>
+        </div>
 
+        <div class="footer__ul">
+          <h3 class="footer__ul__title">Contacto</h3>
+          <ul>
+            <li>
+              <a href=""><i class="bi bi-envelope"></i> sanla@colegio.com</a>
+            </li>
+            <li>
+              <a href=""><i class="bi bi-telephone-fill"></i> 1111111111</a>
+            </li>
+            <li>
+              <a
+                href="https://www.google.com/maps/place/Colegio+San+Ladislao/@-34.4999318,-58.4992476,15z/data=!4m5!3m4!1s0x0:0x3b4d052b50751053!8m2!3d-34.4999311!4d-58.4992481"
+                target="_blank"
+                ><i class="bi bi-geo-alt-fill"></i> Mariano moren 12341</a
+              >
+            </li>
+          </ul>
 
-</footer>
+          <div class="footer__redes">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-envelope"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
-
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

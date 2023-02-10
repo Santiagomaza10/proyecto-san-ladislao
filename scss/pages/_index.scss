@@ -12,7 +12,7 @@
         background-color: rgba(0, 0, 0, 0.418);
         text-align: center;
         padding: 2rem;
-        
+
         p {
             text-decoration: none;
             color: white;
@@ -31,13 +31,46 @@
 
 
 .bienvenida {
-    background-color: rgba(0, 0, 0, 0.089);
+
+        background-color: rgba(0, 0, 0, 0.089);
+        width: auto;
+        border-radius: 8px;
+        box-shadow: 4px 4px 14px -1px rgba(0,0,0,0.76);
+        -webkit-box-shadow: 4px 5px 14px -1px rgba(0,0,0,0.76);
+        -moz-box-shadow: 4px 5px 14px -1px rgba(0,0,0,0.76);
 
     article {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin: 1.5rem;
+
+        @media screen and (min-width: 1024px){
+
+            
+
+            flex-direction: row;
+
+            .bienvenida_text {
+                width: 50%;
+                padding-bottom: 2rem;
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    text-align: start;
+                    padding-left: 1.5rem;
+                }
+                
+                .btn {
+                    width: 15rem;
+                    margin-left: 1.5rem;
+                }
+            }    
+        }
+
+       
 
         h1 {
             span {
@@ -50,8 +83,13 @@
         }
 
         .bienvenida__video {
-            width: 100vw;
+            width: 100%;
             margin: 1rem 0;
+
+            @media screen and (min-width: 1024px){
+                width: 50%;
+                padding: 0 1rem;
+            }
         }
     }
 
@@ -61,8 +99,10 @@
 .niveles {
     display: flex;
     flex-direction: column;
-    margin: 2rem 0;
 
+    @media screen and (min-width: 768px){
+        flex-direction: row;
+    }
     
     .niveles__card {
         display: flex;
@@ -70,13 +110,15 @@
         align-items: center;
         justify-items: center;
         text-align: center;
-        width: 100%;
+        border-radius: 8px;
+        box-shadow: 4px 4px 14px -1px rgba(0,0,0,0.76);
+        -webkit-box-shadow: 4px 5px 14px -1px rgba(0,0,0,0.76);
+        -moz-box-shadow: 4px 5px 14px -1px rgba(0,0,0,0.76);
 
         h2 {
-            margin: 2rem 0;
             font-size: 2rem ;
         }
-
+        
         p {
             margin: 1rem 0;
         }
@@ -89,30 +131,43 @@
 }
 
 .novedades {
+
     background-color: rgba(0, 0, 0, 0.089);
+    height: auto;
+
+
     .novedades__title{
         text-align: center;
         font-size: 2rem;
         margin: 2rem 0;
     }
 
-    .novedades__cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .cards_container {
 
-        .novedades__cards__img {
-            width: 100%;
-            
+        @media screen and (min-width: 768px){
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr  ;
+            grid-template-rows: 1fr 1fr ;
+            gap: 2rem;
         }
 
-        .novedades__cards__text {
-            text-align: center;
-            margin: 1rem 0;
+        .novedades__cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .novedades__cards__img {
+                width: 100%;
+                border-radius: 10%;
+            }
+
+            .novedades__cards__text {
+                text-align: center;
+                margin: 1rem 0;
+            }
         }
     }
-
 }
 
 .redes {

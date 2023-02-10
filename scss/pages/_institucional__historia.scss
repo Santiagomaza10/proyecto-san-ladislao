@@ -1,7 +1,22 @@
 
-.proyecto__text {
-    text-align: center;
+.historia {
+
+    background-color: rgba(0, 0, 0, 0.301);
+
+    @media screen and (min-width: 1024px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 2rem;
+
+        .title {
+            text-align: start;
+        }
+    }
 }
+
+
+
 
 .mision {
     text-align: center;
@@ -9,10 +24,14 @@
 
 .historia__img {
     width: 100%;
+    display: flex;
+    padding: 1.5rem;
+
 
     img {
         width: 100%;
         object-fit: cover;
         object-position: center;
+        border-radius: 10%;
     }
 }

@@ -12,17 +12,25 @@ h2 {
 .textdesc {
   margin: 1.5rem;
   text-align: start;
+  font-size: 14px;
 }
 
 .title {
-  margin: 1.5rem 0;
+  padding-top: 1rem;
   font-size: 2.2rem;
   text-align: center;
 }
 
 .subtitle {
-  margin: 2rem 0;
+  margin: 1rem 0;
   font-size: 2rem;
+}
+
+.carousel img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .banner {
@@ -43,6 +51,11 @@ h2 {
   height: 15rem;
   object-fit: cover;
   object-position: center;
+}
+
+.btngrad {
+  width: 15rem;
+  background-image: linear-gradient() to left #ff5733, rgba(187, 136, 85, 0.4666666667), #ff5733;
 }
 
 footer {
@@ -154,8 +167,19 @@ nav span {
   object-position: center;
 }
 
-.proyecto__text {
-  text-align: center;
+.historia {
+  background-color: rgba(0, 0, 0, 0.301);
+}
+@media screen and (min-width: 1024px) {
+  .historia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+  }
+  .historia .title {
+    text-align: start;
+  }
 }
 
 .mision {
@@ -164,11 +188,14 @@ nav span {
 
 .historia__img {
   width: 100%;
+  display: flex;
+  padding: 1.5rem;
 }
 .historia__img img {
   width: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 10%;
 }
 
 .uniforme .uniforme__img {
@@ -234,12 +261,37 @@ nav span {
 
 .bienvenida {
   background-color: rgba(0, 0, 0, 0.089);
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 4px 4px 14px -1px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 4px 5px 14px -1px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 4px 5px 14px -1px rgba(0, 0, 0, 0.76);
 }
 .bienvenida article {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .bienvenida article {
+    flex-direction: row;
+  }
+  .bienvenida article .bienvenida_text {
+    width: 50%;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .bienvenida article .bienvenida_text h1 {
+    text-align: start;
+    padding-left: 1.5rem;
+  }
+  .bienvenida article .bienvenida_text .btn {
+    width: 15rem;
+    margin-left: 1.5rem;
+  }
 }
 .bienvenida article h1 span {
   background-image: linear-gradient(45deg, red, rgb(158, 152, 152), green);
@@ -249,14 +301,24 @@ nav span {
   -moz-text-fill-color: transparent;
 }
 .bienvenida article .bienvenida__video {
-  width: 100vw;
+  width: 100%;
   margin: 1rem 0;
+}
+@media screen and (min-width: 1024px) {
+  .bienvenida article .bienvenida__video {
+    width: 50%;
+    padding: 0 1rem;
+  }
 }
 
 .niveles {
   display: flex;
   flex-direction: column;
-  margin: 2rem 0;
+}
+@media screen and (min-width: 768px) {
+  .niveles {
+    flex-direction: row;
+  }
 }
 .niveles .niveles__card {
   display: flex;
@@ -264,10 +326,12 @@ nav span {
   align-items: center;
   justify-items: center;
   text-align: center;
-  width: 100%;
+  border-radius: 8px;
+  box-shadow: 4px 4px 14px -1px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 4px 5px 14px -1px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 4px 5px 14px -1px rgba(0, 0, 0, 0.76);
 }
 .niveles .niveles__card h2 {
-  margin: 2rem 0;
   font-size: 2rem;
 }
 .niveles .niveles__card p {
@@ -280,22 +344,32 @@ nav span {
 
 .novedades {
   background-color: rgba(0, 0, 0, 0.089);
+  height: auto;
 }
 .novedades .novedades__title {
   text-align: center;
   font-size: 2rem;
   margin: 2rem 0;
 }
-.novedades .novedades__cards {
+@media screen and (min-width: 768px) {
+  .novedades .cards_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+.novedades .cards_container .novedades__cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.novedades .novedades__cards .novedades__cards__img {
+.novedades .cards_container .novedades__cards .novedades__cards__img {
   width: 100%;
+  border-radius: 10%;
 }
-.novedades .novedades__cards .novedades__cards__text {
+.novedades .cards_container .novedades__cards .novedades__cards__text {
   text-align: center;
   margin: 1rem 0;
 }
@@ -311,6 +385,20 @@ nav span {
 .redes .redes__icontainer i {
   font-size: 1.8rem;
   padding: 1rem 0;
+}
+
+.sectioncard {
+  background-color: rgba(0, 0, 0, 0.089);
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 4px 4px 14px -1px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 4px 5px 14px -1px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 4px 5px 14px -1px rgba(0, 0, 0, 0.76);
+}
+@media screen and (min-width: 1024px) {
+  .sectioncard {
+    margin: 0rem 10rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

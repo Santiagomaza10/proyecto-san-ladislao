@@ -1,6 +1,7 @@
 @import "./base/reset";
 @import "./base/typo";
 
+@import "./components/carousel";
 @import "./components/banner";
 @import "./components/button";
 @import "./components/cards";
@@ -18,5 +19,6 @@
 @import "./pages/inicial__objetivos";
 @import "./pages/index";
 
+@import "./utils/mediaqueries";
 @import "./utils/mixins";
 @import "./utils/variables";
