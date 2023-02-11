@@ -10,7 +10,7 @@ h2 {
 }
 
 .textdesc {
-  margin: 1.5rem;
+  padding: 0rem 1rem;
   text-align: start;
   font-size: 14px;
 }
@@ -259,20 +259,15 @@ nav span {
   padding: 0.5rem;
 }
 
-.bienvenida {
-  background-color: rgba(0, 0, 0, 0.089);
-  width: auto;
-  border-radius: 8px;
-  box-shadow: 4px 4px 14px -1px rgba(0, 0, 0, 0.76);
-  -webkit-box-shadow: 4px 5px 14px -1px rgba(0, 0, 0, 0.76);
-  -moz-box-shadow: 4px 5px 14px -1px rgba(0, 0, 0, 0.76);
-}
 .bienvenida article {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 1.5rem;
+}
+.bienvenida article h1 {
+  text-align: start;
+  padding: 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .bienvenida article {
@@ -284,13 +279,12 @@ nav span {
     display: flex;
     flex-direction: column;
   }
-  .bienvenida article .bienvenida_text h1 {
-    text-align: start;
-    padding-left: 1.5rem;
-  }
-  .bienvenida article .bienvenida_text .btn {
-    width: 15rem;
-    margin-left: 1.5rem;
+  .bienvenida article .bienvenida_text .btndiv {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 1rem;
   }
 }
 .bienvenida article h1 span {
@@ -303,6 +297,10 @@ nav span {
 .bienvenida article .bienvenida__video {
   width: 100%;
   margin: 1rem 0;
+  padding: 1rem;
+}
+.bienvenida article .bienvenida__video iframe {
+  border-radius: 8px;
 }
 @media screen and (min-width: 1024px) {
   .bienvenida article .bienvenida__video {
@@ -314,10 +312,17 @@ nav span {
 .niveles {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .niveles {
     flex-direction: row;
+    gap: 0rem;
+    padding: 0.5rem;
   }
 }
 .niveles .niveles__card {
@@ -327,29 +332,36 @@ nav span {
   justify-items: center;
   text-align: center;
   border-radius: 8px;
-  box-shadow: 4px 4px 14px -1px rgba(0, 0, 0, 0.76);
-  -webkit-box-shadow: 4px 5px 14px -1px rgba(0, 0, 0, 0.76);
-  -moz-box-shadow: 4px 5px 14px -1px rgba(0, 0, 0, 0.76);
-}
-.niveles .niveles__card h2 {
-  font-size: 2rem;
-}
-.niveles .niveles__card p {
-  margin: 1rem 0;
+  height: 20rem;
+  width: 100%;
 }
 .niveles .niveles__card .niveles__img {
   width: 100%;
-  border-radius: 25%;
+  height: 50%;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+.niveles .niveles__card h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 1rem;
+  width: 100%;
+  text-align: start;
+}
+.niveles .niveles__card .btndiv {
+  width: 100%;
+  padding: 0rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: end;
 }
 
 .novedades {
-  background-color: rgba(0, 0, 0, 0.089);
-  height: auto;
+  width: 100%;
 }
 .novedades .novedades__title {
   text-align: center;
   font-size: 2rem;
-  margin: 2rem 0;
 }
 @media screen and (min-width: 768px) {
   .novedades .cards_container {
@@ -371,7 +383,7 @@ nav span {
 }
 .novedades .cards_container .novedades__cards .novedades__cards__text {
   text-align: center;
-  margin: 1rem 0;
+  /*                 margin: 1rem 0; */
 }
 
 .redes h2 {
@@ -389,16 +401,12 @@ nav span {
 
 .sectioncard {
   background-color: rgba(0, 0, 0, 0.089);
-  width: auto;
+  width: 100%;
   border-radius: 8px;
   box-shadow: 4px 4px 14px -1px rgba(0, 0, 0, 0.76);
   -webkit-box-shadow: 4px 5px 14px -1px rgba(0, 0, 0, 0.76);
   -moz-box-shadow: 4px 5px 14px -1px rgba(0, 0, 0, 0.76);
-}
-@media screen and (min-width: 1024px) {
-  .sectioncard {
-    margin: 0rem 10rem;
-  }
+  margin: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
