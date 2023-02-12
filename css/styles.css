@@ -394,7 +394,7 @@ nav span {
 }
 .novedades .cards_container .novedades__cards .novedades__cards__img {
   width: 100%;
-  border-radius: 10%;
+  border-radius: 8px;
 }
 .novedades .cards_container .novedades__cards p {
   padding-top: 0.5rem;
