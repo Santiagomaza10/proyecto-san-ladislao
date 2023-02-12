@@ -32,6 +32,9 @@
 
 .bienvenida {
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     article {
         display: flex;
@@ -157,7 +160,9 @@
 
 .novedades {
     width: 100%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .novedades__title{
         text-align: center;
@@ -165,6 +170,8 @@
     }
 
     .cards_container {
+
+        padding: 0rem 1rem;
 
         @media screen and (min-width: 768px){
             display: grid;
@@ -184,10 +191,10 @@
                 border-radius: 10%;
             }
 
-            .novedades__cards__text {
-                text-align: center;
-/*                 margin: 1rem 0; */
+            p {
+                padding-top: 0.5rem;
             }
+
         }
     }
 }

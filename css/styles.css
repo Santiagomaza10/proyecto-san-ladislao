@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+main {
+  background-color: #e7e7e7;
+}
+
 h2 {
   margin: 1.8rem 0;
   font-size: 2rem;
@@ -259,6 +263,11 @@ nav span {
   padding: 0.5rem;
 }
 
+.bienvenida {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .bienvenida article {
   display: flex;
   flex-direction: column;
@@ -358,10 +367,16 @@ nav span {
 
 .novedades {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .novedades .novedades__title {
   text-align: center;
   font-size: 2rem;
+}
+.novedades .cards_container {
+  padding: 0rem 1rem;
 }
 @media screen and (min-width: 768px) {
   .novedades .cards_container {
@@ -381,9 +396,8 @@ nav span {
   width: 100%;
   border-radius: 10%;
 }
-.novedades .cards_container .novedades__cards .novedades__cards__text {
-  text-align: center;
-  /*                 margin: 1rem 0; */
+.novedades .cards_container .novedades__cards p {
+  padding-top: 0.5rem;
 }
 
 .redes h2 {
@@ -400,7 +414,7 @@ nav span {
 }
 
 .sectioncard {
-  background-color: rgba(0, 0, 0, 0.089);
+  background-color: #ffffff;
   width: 100%;
   border-radius: 8px;
   box-shadow: 4px 4px 14px -1px rgba(0, 0, 0, 0.76);
