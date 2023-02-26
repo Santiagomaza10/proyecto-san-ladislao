@@ -3,9 +3,8 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: green;
-    padding: 1.5rem;
-    margin-top: 1.5rem;
+    background: var(--bg-gradientfooter);
+    padding: 1rem;
 
     div{
         
@@ -61,3 +60,21 @@ footer {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    footer {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .footer__container1, .footer__container2 {
+            height: 100%;
+            padding-top: 3rem;
+            padding-bottom: 0rem;
+            min-height: 12rem;
+        }
+    }
+}
+
+.footer__ul__title {
+    color: black;
+}

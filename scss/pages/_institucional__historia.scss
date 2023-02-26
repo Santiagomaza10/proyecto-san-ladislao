@@ -15,7 +15,15 @@
     }
 }
 
+.proyecto {
 
+    article {
+        width: 100%;
+        .carousel {
+            padding: 1rem;
+        }
+    }
+}
 
 
 .mision {
@@ -24,14 +32,14 @@
 
 .historia__img {
     width: 100%;
-    display: flex;
     padding: 1.5rem;
+    display: flex;
 
 
     img {
         width: 100%;
         object-fit: cover;
         object-position: center;
-        border-radius: 10%;
+        border-radius: 8px;
     }
 }

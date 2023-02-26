@@ -1,4 +1,14 @@
 nav {
+    background: var(--bg-gradientnav);
+
+    .nav-item {
+
+        a{
+            color: var(--bg-body);
+        }
+    }
+
+
 
     a {
         display: flex;

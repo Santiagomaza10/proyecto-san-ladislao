@@ -62,22 +62,13 @@ h2 {
   background-image: linear-gradient() to left #ff5733, rgba(187, 136, 85, 0.4666666667), #ff5733;
 }
 
-.sectioncard {
-  background-color: #ffffff;
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 4px 4px 14px -1px rgba(0, 0, 0, 0.76);
-  -webkit-box-shadow: 4px 5px 14px -1px rgba(0, 0, 0, 0.76);
-  -moz-box-shadow: 4px 5px 14px -1px rgba(0, 0, 0, 0.76);
-  margin: 1rem;
-}
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--bg-gradientfooter);
-  padding: 1rem;
+  background: green;
+  padding: 1.5rem;
 }
 footer div ul {
   list-style: none;
@@ -117,29 +108,6 @@ footer div ul li a {
   letter-spacing: 0.4rem;
 }
 
-@media screen and (min-width: 1024px) {
-  footer {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  footer .footer__container1, footer .footer__container2 {
-    height: 100%;
-    padding-top: 3rem;
-    padding-bottom: 0rem;
-    min-height: 12rem;
-  }
-}
-.footer__ul__title {
-  color: black;
-}
-
-nav {
-  background: var(--bg-gradientnav);
-}
-nav .nav-item a {
-  color: var(--bg-body);
-}
 nav a {
   display: flex;
   gap: 2rem;
@@ -263,6 +231,9 @@ nav span {
   border-radius: 8px;
 }
 
+.objetivos h2 {
+  color: red;
+}
 .objetivos .objetivos__card {
   padding: 1rem;
 }
@@ -488,10 +459,20 @@ nav span {
   padding: 1rem 0;
 }
 
-:root {
-  --bg-gradientnav: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgb(39, 141, 34) 28%);
-  --bg-gradientfooter: linear-gradient(0deg, rgba(16,106,11,1) 72%, rgba(231,231,231,1) 98%);
-  --bg-body: #e7e7e7;
+.sectionback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.sectioncard {
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 4px 4px 14px -1px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 4px 5px 14px -1px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 4px 5px 14px -1px rgba(0, 0, 0, 0.76);
+  margin: 1rem;
+}
+
+/*# sourceMappingURL=styles.csss.map */

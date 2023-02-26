@@ -1,14 +1,8 @@
-.sectioncard {
-    background-color: #ffffff;
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 4px 4px 14px -1px rgba(0,0,0,0.76);
-    -webkit-box-shadow: 4px 5px 14px -1px rgba(0,0,0,0.76);
-    -moz-box-shadow: 4px 5px 14px -1px rgba(0,0,0,0.76);
-    margin: 1rem;
 
-    @media screen and (min-width:1024px){
-        
+:root {
+    --bg-gradientnav: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgb(39, 141, 34) 28%);
+    --bg-gradientfooter: linear-gradient(0deg, rgba(16,106,11,1) 72%, rgba(231,231,231,1) 98%);;
+    --bg-body: #e7e7e7;
 
-    }
 }
+
