@@ -1,6 +1,6 @@
 .hero {
     width: 100%;
-    height: 31rem;
+    height: 100vh;
     background-image: url("../assets/herofoto.jpg");
     background-size: cover;
     background-position: center;
@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
 
-    .hero__btncontainer{
+    .hero__btncontainer {
         background-color: rgba(0, 0, 0, 0.418);
         text-align: center;
         padding: 2rem;
@@ -19,13 +19,13 @@
             padding-bottom: 1.2rem;
         }
 
-        
+
         a {
             text-decoration: none;
             color: white;
             padding: 0.5rem;
         }
-    
+
     }
 }
 
@@ -47,7 +47,7 @@
             padding: 1.5rem;
         }
 
-        @media screen and (min-width: 1024px){
+        @media screen and (min-width: 1024px) {
 
             flex-direction: row;
 
@@ -57,22 +57,22 @@
                 display: flex;
                 flex-direction: column;
 
-                
-            .btndiv {
-                width: 100%;
-                display: flex;
-                justify-content: start;
-                align-items: center;
-                padding-left: 1rem;
+
+                .btndiv {
+                    width: 100%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    padding-left: 1rem;
+                }
             }
-            }    
         }
 
-       
+
 
         h1 {
             span {
-                background-image: linear-gradient(45deg, red, rgb(158, 152, 152),green);
+                background-image: linear-gradient(45deg, red, rgb(158, 152, 152), green);
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -89,7 +89,7 @@
                 border-radius: 8px;
             }
 
-            @media screen and (min-width: 1024px){
+            @media screen and (min-width: 1024px) {
                 width: 50%;
                 padding: 0 1rem;
             }
@@ -108,12 +108,12 @@
     padding: 1.5rem;
     width: 100%;
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         flex-direction: row;
-        gap: 0rem;  
-        padding: 0.5rem;
+        gap: 0rem;
+        padding: 1rem;
     }
-    
+
     .niveles__card {
         display: flex;
         flex-direction: column;
@@ -123,7 +123,7 @@
         border-radius: 8px;
         height: 20rem;
         width: 100%;
-        
+
 
 
         .niveles__img {
@@ -133,21 +133,17 @@
             object-fit: cover;
             object-position: center;
 
-            @media screen and (min-width: 768px){
-
-            
-
-            }
+            @media screen and (min-width: 768px) {}
         }
 
         h2 {
-            font-size: 1.5rem ;
+            font-size: 1.5rem;
             margin: 0;
             padding: 1rem;
             width: 100%;
             text-align: start;
         }
-        
+
         .btndiv {
             width: 100%;
             padding: 0rem 1rem 1rem 1rem;
@@ -161,23 +157,29 @@
 .novedades {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0rem 1rem;
 
-    .novedades__title{
+    .novedades__title {
         text-align: center;
         font-size: 2rem;
     }
 
     .cards_container {
 
-        padding: 0rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        @media screen and (min-width: 768px){
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr  ;
-            grid-template-rows: 1fr 1fr ;
+        @media screen and (min-width: 768px) {
+            display: grid;  
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
             gap: 2rem;
+            padding-right: 2rem;
         }
 
         .novedades__cards {
@@ -186,13 +188,21 @@
             align-items: center;
             justify-content: center;
 
+
             .novedades__cards__img {
                 width: 100%;
                 border-radius: 8px;
+
             }
 
             p {
-                padding-top: 0.5rem;
+                padding-top: 1rem;
+            }
+
+            a {
+                width: 100%;
+                text-align: end;
+                padding: .5rem;
             }
 
         }
@@ -209,15 +219,12 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        max-width: 1000px;
 
-        i{
+        i {
             font-size: 1.8rem;
             padding: 1rem 0;
         }
     }
-    
+
 }
-
-
-
-

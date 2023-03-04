@@ -5,3 +5,34 @@
     }
 }
 
+.contacto_map {
+    padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .contacto {
+
+        h1 {
+            padding-left: 1rem;
+        }
+
+        .sectioncard{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .contacto_textcontainer{
+                width: 50%;
+            }
+    
+            .contacto_map {
+                width: 50%;
+            }
+        }
+    }
+
+}
+
+
+

@@ -1,29 +1,86 @@
-.inicialproyectos_huerta {
 
-    .inicialproyectos_huerta__img  {
+/* PROYECTO 1 */
+
+.proyectos_huerta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width:768px) {
+        .proyectos_container1{
+            display: flex;
+            max-width: 1000px;
+
+            .proyectos_huerta__text {
+                width: 50%;
+            }
+
+            .proyectos_huerta__img {
+                width: 50%;
+                padding: 1rem;
+
+                img {
+                    border-radius: 8px;
+                    
+                }
+            }
+        }
+    }
+
+    .proyectos_huerta__img  {
         width: 100%;
 
         img {
             width: 100%;
             object-fit: cover;
             object-position: center;
+            border-radius: 8px;
         }
 
     }
 
 }
 
-.inicialproyectos_muestra {
+/* PROYECTO 2 */
 
-    .inicialproyectos_muestra__img {
-        width: 100%;
+.proyectos_musica {
 
-        img {
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width:768px) {
+
+        .proyectos_container2{
+            display: flex;
+            max-width: 1000px;
+
+            .proyectos_musica__text {
+                width: 50%;
+                order: 2;
+            }
+
+            .proyectos_musica__img {
+                width: 50%;
+                padding: 1rem;
+                order: 1;
+                img {
+                    border-radius: 8px;
+                    
+                }
+            }
         }
 
-    }
+        .proyectos_musica__img {
+            width: 100%;
 
+            img {
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 8px;
+            }
+
+        }
+    }
 }

@@ -8,7 +8,58 @@
     margin: 1rem;
 
     @media screen and (min-width:1024px){
-        
+        max-width: 1000px;        
+
+    }
+}
+
+.especialescard {
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 4px 4px 14px -1px rgba(0,0,0,0.76);
+    -webkit-box-shadow: 4px 5px 14px -1px rgba(0,0,0,0.76);
+    -moz-box-shadow: 4px 5px 14px -1px rgba(0,0,0,0.76);
+    margin: 1rem;
+
+    @media screen and (min-width:1024px){
+        max-width: 1000px;        
+
+        .especiales_container1, .especiales_container2 {
+            display: flex;
+
+            .especiales__text {
+                width: 50%;
+            }
+
+            .especiales__imgcontainer {
+                width: 50%;
+                padding: 2rem;
+
+                .especiales__img {
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        .especiales_container2 {
+            
+            .especiales__text {
+                padding-top: 1.5rem;
+                order: 2;
+            }
+
+            .especiales__carousel{
+                width: 50%;
+                padding: 1.5rem 2rem;
+                img {
+                    border-radius: 8px;
+                }
+            }
+        }
 
     }
 }
