@@ -111,7 +111,7 @@
     @media screen and (min-width: 768px) {
         flex-direction: row;
         gap: 0rem;
-        padding: 1rem;
+        max-width: 1050px;
     }
 
     .niveles__card {
@@ -211,20 +211,29 @@
 
 .redes {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
     h2 {
         text-align: center;
     }
+
+
 
     .redes__icontainer {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        max-width: 1000px;
 
         i {
             font-size: 1.8rem;
             padding: 1rem 0;
         }
+        
+
     }
+
 
 }

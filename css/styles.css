@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +7,16 @@
 
 main {
   background-color: #e7e7e7;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+h3, p, span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 h2 {
@@ -35,6 +46,11 @@ h2 {
   font-size: 2rem;
 }
 
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .carousel img {
   width: 100%;
   max-height: 400px;
@@ -196,6 +212,9 @@ footer div ul li a {
 nav {
   background: var(--bg-gradientnav);
 }
+nav .navitemcontainer {
+  display: flex;
+}
 nav .nav-item a {
   color: black;
 }
@@ -208,6 +227,11 @@ nav i {
 }
 nav span {
   display: none;
+}
+
+.logosimg {
+  width: 3.2rem;
+  margin-left: 1rem;
 }
 
 .contacto_li li {
@@ -377,6 +401,27 @@ nav span {
   border-radius: 8px;
 }
 
+.autoridades .autoridades__representantes, .autoridades .autoridades__directivos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.autoridades .autoridades__representantes li, .autoridades .autoridades__directivos li {
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .autoridades .container_autoridades {
+    display: flex;
+  }
+  .autoridades .container_autoridades .autoridades__representantes, .autoridades .container_autoridades .autoridades__directivos {
+    width: 50%;
+  }
+  .autoridades h2 {
+    text-align: center;
+  }
+}
+
 .uniforme .uniforme__img {
   width: 100%;
   padding: 1.5rem;
@@ -389,11 +434,22 @@ nav span {
   border-radius: 8px;
 }
 
+.proyectoeducativo {
+  display: flex;
+  flex-direction: column;
+}
+
 .objetivos .objetivos__card {
   padding: 1rem;
 }
 .objetivos .objetivos__card h2 {
+  width: 100%;
   text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .objetivos .objetivos__card h2 h2 {
+    text-align: start;
+  }
 }
 .objetivos .objetivos__card .objetivos__img {
   width: 100%;
@@ -555,7 +611,7 @@ nav span {
   .niveles {
     flex-direction: row;
     gap: 0rem;
-    padding: 1rem;
+    max-width: 1050px;
   }
 }
 .niveles .niveles__card {
@@ -635,6 +691,11 @@ nav span {
   padding: 0.5rem;
 }
 
+.redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .redes h2 {
   text-align: center;
 }
@@ -642,7 +703,6 @@ nav span {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 1000px;
 }
 .redes .redes__icontainer i {
   font-size: 1.8rem;

@@ -1,6 +1,10 @@
 nav {
     background: var(--bg-gradientnav);
 
+    .navitemcontainer {
+        display: flex;
+    }
+
     .nav-item {
 
         a{
@@ -17,7 +21,14 @@ nav {
     i {
         font-size: 2rem;
     }
+
     span {
         display: none;
     }
+
+}
+
+.logosimg {
+    width: 3.2rem;
+    margin-left: 1rem;
 }
