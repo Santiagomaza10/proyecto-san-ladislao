@@ -162,6 +162,11 @@
     align-items: center;
     padding: 0rem 1rem;
 
+    @media screen and (min-width: 768px) {
+        gap: 0rem;
+        max-width: 1050px;
+    }
+
     .novedades__title {
         text-align: center;
         font-size: 2rem;
@@ -214,7 +219,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    
     
     h2 {
         text-align: center;

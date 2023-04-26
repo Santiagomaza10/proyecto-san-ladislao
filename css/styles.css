@@ -653,6 +653,12 @@ nav span {
   align-items: center;
   padding: 0rem 1rem;
 }
+@media screen and (min-width: 768px) {
+  .novedades {
+    gap: 0rem;
+    max-width: 1050px;
+  }
+}
 .novedades .novedades__title {
   text-align: center;
   font-size: 2rem;
