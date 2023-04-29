@@ -434,9 +434,14 @@ nav span {
   border-radius: 8px;
 }
 
-.proyectoeducativo {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 1024px) {
+  .proyectoeducativotitle {
+    justify-content: start;
+  }
+}
+
+.uniformetitlecontainer {
+  text-align: center;
 }
 
 .objetivos .objetivos__card {
@@ -453,6 +458,9 @@ nav span {
 }
 .objetivos .objetivos__card .objetivos__img {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .objetivos .objetivos__card .objetivos__img img {
   width: 100%;
